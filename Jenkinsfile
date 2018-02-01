@@ -2,7 +2,7 @@ pipeline {
   agent {
     dockerfile {
       label 'databaker-jupyter'
-      args "-v ${PWD}:/workspace"
+      args "-v ${env.WORKSPACE}:/workspace"
     }
   }
   stages {
