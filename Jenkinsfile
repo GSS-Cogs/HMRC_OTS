@@ -6,7 +6,7 @@ pipeline {
     }
   }
   stages {
-    stage{'Transform'} {
+    stage('Transform') {
       steps {
         sh 'jupyter-nbconvert --to python --stdout Port_codes.ipynb  | python'
       }
