@@ -1,7 +1,6 @@
 pipeline {
   agent {
     dockerfile {
-      label 'databaker-jupyter'
       args "-v ${env.WORKSPACE}:/workspace"
     }
   }
