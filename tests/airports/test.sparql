@@ -1,0 +1,8 @@
+# If it has a IATA code, it should be an airport
+PREFIX ports: <https://www.uktradeinfo.com/def/ports#>
+PREFIX schema: <http://schema.org/>
+SELECT ?a ?t WHERE {
+  ?a a ?t ;
+     schema:iataCode ?code .
+  FILTER ( ?t not in (ports:DesignatedAirport, ports:MilitaryAirport, ports:NonDesignatedAirport, ports:NotApplicable) ) .
+}
