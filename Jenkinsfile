@@ -1,10 +1,13 @@
 pipeline {
-  agent any
+  agent {
+      label 'master'
+  }
   stages {
     stage('Transform') {
       agent {
         dockerfile {
           args "-v ${env.WORKSPACE}:/workspace"
+          reuseNode true
         }
       }
       steps {
