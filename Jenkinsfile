@@ -13,7 +13,7 @@ pipeline {
     }
     stage('Test') {
       steps {
-        sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -t tests/airports out/airports.jsonld'
+        sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -t tests out/airports.jsonld out/seaports.jsonld'
       }
     }
   }
