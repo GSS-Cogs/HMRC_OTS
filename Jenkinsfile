@@ -22,6 +22,7 @@ pipeline {
   }
   post {
     always {
+      archiveArtifacts 'out/*'
       junit 'reports/**/*.xml'
     }
   }
