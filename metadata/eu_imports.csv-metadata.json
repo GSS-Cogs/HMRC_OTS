@@ -1,0 +1,72 @@
+{
+  "@context": ["http://www.w3.org/ns/csvw", {"@language": "en"}],
+  "@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711",
+  "url": "eu_imports.csv",
+  "dc:title": "EU Imports",
+  "dc:description": " Imports Monthly Early Publication of Overseas Trade Statistics",
+  "dc:publisher": [{
+    "schema:name": "HM Revenue & Customs",
+    "schema:url": {"@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711.xls"}
+  }],
+  "qb:structure": {
+    "@id": "OTS_IMP_1711",
+    "@type": "qb:DataStructureDefinition",
+    "qb:component": [
+      {
+        "qb:dimension": {
+          "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+          "@type": "qb:DimensionProperty",
+          "rdfs:label": "reference period for observation value",
+          "rdfs:range": {
+            "@id": "http://www.w3.org/2006/time#Interval"
+          }
+        }
+      }, {
+        "qb:dimension": {
+          "@id": "https://www.uktradeinfo.com/Statistics/def/ots#cn-chapter",
+          "@type": "qb:DimensionProperty",
+          "rdfs:label": "CN2015 chapter",
+          "rdfs:range": {
+            "@id": "https://trade.ec.europa.eu/def/cn#Chapter"
+          }
+        }
+      }, {
+        "qb:measure": {
+          "@id": "https://www.uktradeinfo.com/Statistics/def/ots#value",
+          "@type": "qb:MeasureProperty",
+          "rdfs:label": "value of goods",
+          "rdfs:range": {
+            "@id": "xsd:nonNegativeInteger"
+          }
+        }
+      }
+    ]
+  },
+  "tableSchema": {
+    "columns": [{
+      "name": "cn",
+      "titles": "cn-chapter",
+      "dc:description": "Combined Nomenclature 2015 chapter",
+      "datatype": "string",
+      "required": true,
+      "propertyUrl": "https://www.uktradeinfo.com/Statistics/def/ots#cn-chapter",
+      "valueUrl": "https://trade.ec.europa.eu/def/cn#chapter_{cn}"
+    }, {
+      "name": "gbp",
+      "titles": "gbp-thousands",
+      "dc:description": "Thousands of GBP (£)",
+      "datatype": "integer",
+      "required": true,
+      "propertyUrl": "https://www.uktradeinfo.com/Statistics/def/ots#value"
+    }, {
+      "name": "ym",
+      "titles": "year-month",
+      "dc:description": "Year and month",
+      "datatype": "string",
+      "required": true,
+      "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+      "valueUrl": "http://reference.data.gov.uk/id/month/{ym}"
+    }],
+    "aboutUrl": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711#obs-{cn}-{ym}"
+  }
+}
