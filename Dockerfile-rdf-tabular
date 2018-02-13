@@ -1,0 +1,9 @@
+FROM ruby:2.4-alpine
+
+RUN \
+    apk add --no-cache -t .dev build-base && \
+    gem install rdf-tabular linkeddata && \
+    apk del .dev
+
+VOLUME /workspace
+WORKDIR /workspace

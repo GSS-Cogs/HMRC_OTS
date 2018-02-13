@@ -18,14 +18,14 @@ pipeline {
     stage('CSV2RDF') {
       agent {
         dockerfile {
-          filename "Dockerfile.csv2rdf"
+          filename "Dockerfile-rdf-tabular"
           args "-v ${env.WORKSPACE}:/workspace"
           reuseNode true
         }
       }
       steps {
         sh 'cp metadata/*.json out/'
-        sh 'csv2rdf --full --schema out/eu_imports.csv-metadata.json out/eu_imports.csv > out/eu_imports.ttl'
+        sh 'rdf-tabular rdf serialize --input-format tabular --output-format ttl out/eu_imports.csv > out/eu_imports.ttl'
       }
     }
     stage('Test') {
