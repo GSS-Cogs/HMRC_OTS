@@ -1,0 +1,14 @@
+FROM ruby:2.4-alpine
+
+RUN \
+    apk add --no-cache git && \
+    apk add --no-cache -t .dev build-base && \
+    mkdir /src && \
+    cd /src && \
+    git clone https://github.com/ONS-OpenData/csv2rdf.git && \
+    cd csv2rdf && \
+    bundle install && \
+    apk del .dev
+
+VOLUME /workspace
+WORKDIR /workspace
