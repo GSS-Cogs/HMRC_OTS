@@ -9,7 +9,7 @@
     "schema:url": {"@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711.xls"}
   }],
   "qb:structure": {
-    "@id": "#dsd",
+    "@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711#dsd",
     "@type": "qb:DataStructureDefinition",
     "qb:component": [
       {
