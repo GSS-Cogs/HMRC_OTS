@@ -9,7 +9,7 @@
     "schema:url": {"@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711.xls"}
   }],
   "qb:structure": {
-    "@id": "OTS_IMP_1711",
+    "@id": "#dsd",
     "@type": "qb:DataStructureDefinition",
     "qb:component": [
       {
@@ -66,6 +66,12 @@
       "required": true,
       "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
       "valueUrl": "http://reference.data.gov.uk/id/month/{ym}"
+    }, {
+      "name": "dataset_ref2",
+      "rdfs:comment": "virtual column linking observations to the dataset",
+      "virtual": true,
+      "propertyUrl": "qb:dataSet",
+      "valueUrl": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711"
     }],
     "aboutUrl": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711#obs-{cn}-{ym}"
   }

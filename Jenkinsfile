@@ -28,10 +28,15 @@ pipeline {
         sh 'rdf serialize --input-format tabular --output-format ttl out/eu_imports.csv > out/eu_imports.ttl'
       }
     }
+    stage('Normalize Cube') {
+      steps {
+        sh './bin/normalize'
+      }
+    }
     stage('Test') {
       steps {
         sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -i -t tests/ports -r reports/TESTS-ports.xml out/airports.jsonld out/seaports.jsonld'
-        sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -i -t tests/qb -r reports/TESTS-qb.xml out/airports.jsonld out/seaports.jsonld'
+        sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -i -t tests/qb -r reports/TESTS-qb.xml out/eu_imports.ttl out/norm.nt'
       }
     }
   }
