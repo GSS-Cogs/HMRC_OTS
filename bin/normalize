@@ -1,7 +1,0 @@
-#!/bin/bash
-
-rm -f out/norm.nt
-
-for q in sparql/normalize*.sparql; do
-    ./bin/sparql --data=out/eu_imports.ttl --query=$q --results=nt >> out/norm.nt
-done
