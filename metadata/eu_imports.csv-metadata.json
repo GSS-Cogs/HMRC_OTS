@@ -4,10 +4,10 @@
   "url": "eu_imports.csv",
   "dc:title": "EU Imports",
   "dc:description": " Imports Monthly Early Publication of Overseas Trade Statistics",
-  "dc:publisher": [{
-    "schema:name": "HM Revenue & Customs",
-    "schema:url": {"@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711.xls"}
-  }],
+  "dc:publisher": {
+    "@id": "https://www.gov.uk/government/organisations/hm-revenue-customs",
+    "rdfs:label": "HM Revenue & Customs"
+  },
   "qb:structure": {
     "@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711#dsd",
     "@type": "qb:DataStructureDefinition",
@@ -15,7 +15,7 @@
       {
         "qb:dimension": {
           "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
-          "@type": "qb:DimensionProperty",
+          "@type": ["qb:DimensionProperty", "owl:ObjectProperty"],
           "rdfs:label": "reference period for observation value",
           "rdfs:range": {
             "@id": "http://www.w3.org/2006/time#Interval"
@@ -24,7 +24,7 @@
       }, {
         "qb:dimension": {
           "@id": "https://www.uktradeinfo.com/Statistics/def/ots#cn-chapter",
-          "@type": "qb:DimensionProperty",
+          "@type": ["qb:DimensionProperty", "owl:ObjectProperty"],
           "rdfs:label": "CN2015 chapter",
           "rdfs:range": {
             "@id": "https://trade.ec.europa.eu/def/cn#Chapter"
@@ -33,7 +33,7 @@
       }, {
         "qb:measure": {
           "@id": "https://www.uktradeinfo.com/Statistics/def/ots#value",
-          "@type": "qb:MeasureProperty",
+          "@type": [ "owl:DatatypeProperty", "qb:MeasureProperty" ],
           "rdfs:label": "value of goods",
           "rdfs:range": {
             "@id": "xsd:nonNegativeInteger"
