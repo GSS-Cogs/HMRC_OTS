@@ -2,7 +2,6 @@
 PREFIX ports: <https://www.uktradeinfo.com/def/ports#>
 PREFIX schema: <http://schema.org/>
 ASK {
-  SELECT (COUNT(?a) AS ?ports) WHERE {
-    ?a a ports:Seaport .
-  } HAVING (?ports > 0)
+  ?s ?p ?o
+  FILTER NOT EXISTS { ?a a ports:Seaport }
 }
