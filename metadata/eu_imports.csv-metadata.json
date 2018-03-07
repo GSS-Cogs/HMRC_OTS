@@ -3,7 +3,7 @@
   "@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711",
   "url": "eu_imports.csv",
   "dc:title": "EU Imports",
-  "dc:description": " Imports Monthly Early Publication of Overseas Trade Statistics",
+  "dc:description": "Imports Monthly Early Publication of Overseas Trade Statistics",
   "dc:publisher": {
     "@id": "https://www.gov.uk/government/organisations/hm-revenue-customs",
     "rdfs:label": "HM Revenue & Customs"
