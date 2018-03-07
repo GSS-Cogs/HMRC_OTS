@@ -29,7 +29,7 @@ pipeline {
     }
     stage('Normalize Cube') {
       steps {
-        sh 'java -cp bin/sparql uk.org.floop.updateInPlace.Run -q normalize out/eu_imports.ttl'
+        sh 'java -cp bin/sparql uk.org.floop.updateInPlace.Run -q sparql-normalize out/eu_imports.ttl'
       }
     }
     stage('Test') {
