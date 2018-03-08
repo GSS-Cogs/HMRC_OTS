@@ -1,0 +1,403 @@
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix prv:   <http://purl.org/net/provenance/ns#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix interval: <http://reference.data.gov.uk/def/intervals/> .
+@prefix frbr:  <http://purl.org/vocab/frbr/core#> .
+@prefix scv:   <http://purl.org/NET/scovo#> .
+@prefix dgu:   <http://reference.data.gov.uk/def/reference/> .
+@prefix void:  <http://rdfs.org/ns/void#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:  <http://www.w3.org/2006/time#> .
+@prefix dct:   <http://purl.org/dc/dcmitype/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap:  <http://usefulinc.com/ns/doap#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+<http://reference.data.gov.uk/id/day/2017-11-06>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Monday the 6th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-06"@en ;
+        skos:prefLabel       "British Day:2017-11-06"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-19>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Sunday the 19th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-19"@en ;
+        skos:prefLabel       "British Day:2017-11-19"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-13>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Monday the 13th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-13"@en ;
+        skos:prefLabel       "British Day:2017-11-13"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-26>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Sunday the 26th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-26"@en ;
+        skos:prefLabel       "British Day:2017-11-26"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+_:b0    a                     prv:DataProvidingService ;
+        prv:employedArtifact  [ a             doap:Project ;
+                                prv:usedBy    _:b1 ;
+                                doap:name     "UK Gov. Intervals and Instants URI Set Server" ;
+                                doap:release  [ a              doap:Version ;
+                                                doap:created   "2011-09-09"^^xsd:date ;
+                                                doap:name      "Harrison"@en ;
+                                                doap:revision  "0.0.3"
+                                              ]
+                              ] ;
+        prv:operatedBy        _:b1 ;
+        doap:name             "Intervals and Instants URI Set Service"@en .
+
+<http://reference.data.gov.uk/id/day/2017-11-20>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Monday the 20th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-20"@en ;
+        skos:prefLabel       "British Day:2017-11-20"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-05>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Sunday the 5th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-05"@en ;
+        skos:prefLabel       "British Day:2017-11-05"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-18>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Saturday the 18th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-18"@en ;
+        skos:prefLabel       "British Day:2017-11-18"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-12>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Sunday the 12th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-12"@en ;
+        skos:prefLabel       "British Day:2017-11-12"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-25>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Saturday the 25th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-25"@en ;
+        skos:prefLabel       "British Day:2017-11-25"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-04>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Saturday the 4th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-04"@en ;
+        skos:prefLabel       "British Day:2017-11-04"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-17>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Friday the 17th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-17"@en ;
+        skos:prefLabel       "British Day:2017-11-17"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/month/2017-12>
+        a                   interval:Month , interval:CalendarMonth ;
+        rdfs:comment        "The month of December in the British calendar year 2017"@en ;
+        rdfs:label          "British Month:2017-12"@en ;
+        skos:prefLabel      "British Month:2017-12"@en ;
+        time:intervalMetBy  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-11>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Saturday the 11th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-11"@en ;
+        skos:prefLabel       "British Day:2017-11-11"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/gregorian-interval/2017-11-01T00:00:00/P1M>
+        a               time:Interval ;
+        rdfs:comment    "An interval of 1 month beginning at the start of the 1st second of 1st minute of 1st hour of Wednesday the 1st November 2017 in the Gregorian Calendar"@en ;
+        rdfs:label      "Gregorian Interval:2017-11-01T00:00:00/P1M"@en ;
+        skos:prefLabel  "Gregorian Interval:2017-11-01T00:00:00/P1M"@en .
+
+<http://reference.data.gov.uk/id/day/2017-11-24>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Friday the 24th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-24"@en ;
+        skos:prefLabel       "British Day:2017-11-24"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/doc/month/2017-11.ttl>
+        a               foaf:Document ;
+        rdfs:label      "Turtle document about: British Month:2017-11"@en ;
+        dcterms:format  [ rdfs:label  "text/turtle" ] .
+
+<http://reference.data.gov.uk/id/day/2017-11-09>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Thursday the 9th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-09"@en ;
+        skos:prefLabel       "British Day:2017-11-09"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/doc/month/2017-11.nt>
+        a               foaf:Document ;
+        rdfs:label      "N-Triple document about: British Month:2017-11"@en ;
+        dcterms:format  [ rdfs:label  "text/plain" ] .
+
+<http://reference.data.gov.uk/id/gregorian-instant/2017-11-01T00:00:00>
+        a                               time:Instant ;
+        rdfs:comment                    "The instant at start of the 1st second of 1st minute of 1st hour of Wednesday the 1st November of the Gregorian calendar year 2017"@en ;
+        rdfs:label                      "Gregorian Instant:2017-11-01T00:00:00"@en ;
+        interval:dayOfWeek              time:Wednesday ;
+        interval:monthOfYear            interval:November ;
+        interval:ordinalDayOfMonth      1 ;
+        interval:ordinalDayOfWeek       3 ;
+        interval:ordinalDayOfYear       305 ;
+        interval:ordinalHalfOfYear      2 ;
+        interval:ordinalHourOfDay       0 ;
+        interval:ordinalMinuteOfHour    0 ;
+        interval:ordinalMonthOfYear     11 ;
+        interval:ordinalQuarterOfYear   4 ;
+        interval:ordinalSecondOfMinute  0 ;
+        interval:ordinalWeekOfYear      44 ;
+        interval:ordinalWeekOfYearYear  2017 ;
+        interval:ordinalYear            2017 ;
+        skos:prefLabel                  "Gregorian Instant:2017-11-01T00:00:00"@en ;
+        time:inXSDDateTime              "2017-11-01T00:00:00"^^xsd:dateTime .
+
+<http://reference.data.gov.uk/id/day/2017-11-03>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Friday the 3rd of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-03"@en ;
+        skos:prefLabel       "British Day:2017-11-03"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/doc/month/2017-11.json>
+        a               foaf:Document ;
+        rdfs:label      "JSON document about: British Month:2017-11"@en ;
+        dcterms:format  [ rdfs:label  "application/json" ] .
+
+<http://reference.data.gov.uk/id/day/2017-11-16>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Thursday the 16th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-16"@en ;
+        skos:prefLabel       "British Day:2017-11-16"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/gregorian-instant/2017-12-01T00:00:00>
+        a                               time:Instant ;
+        rdfs:comment                    "The instant at start of the 1st second of 1st minute of 1st hour of Friday the 1st December of the Gregorian calendar year 2017"@en ;
+        rdfs:label                      "Gregorian Instant:2017-12-01T00:00:00"@en ;
+        interval:dayOfWeek              time:Friday ;
+        interval:monthOfYear            interval:December ;
+        interval:ordinalDayOfMonth      1 ;
+        interval:ordinalDayOfWeek       5 ;
+        interval:ordinalDayOfYear       335 ;
+        interval:ordinalHalfOfYear      2 ;
+        interval:ordinalHourOfDay       0 ;
+        interval:ordinalMinuteOfHour    0 ;
+        interval:ordinalMonthOfYear     12 ;
+        interval:ordinalQuarterOfYear   4 ;
+        interval:ordinalSecondOfMinute  0 ;
+        interval:ordinalWeekOfYear      48 ;
+        interval:ordinalWeekOfYearYear  2017 ;
+        interval:ordinalYear            2017 ;
+        skos:prefLabel                  "Gregorian Instant:2017-12-01T00:00:00"@en ;
+        time:inXSDDateTime              "2017-12-01T00:00:00"^^xsd:dateTime .
+
+<http://reference.data.gov.uk/id/day/2017-11-29>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Wednesday the 29th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-29"@en ;
+        skos:prefLabel       "British Day:2017-11-29"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/month/2017-11>
+        a                              interval:Month , interval:CalendarMonth , scv:Dimension ;
+        rdfs:comment                   "The month of November in the British calendar year 2017"@en ;
+        rdfs:label                     "British Month:2017-11"@en ;
+        scv:max                        "2017-11-30"^^xsd:date ;
+        scv:min                        "2017-11-01"^^xsd:date ;
+        interval:hasXsdDurationDescription
+                "P1M"^^xsd:duration ;
+        interval:intervalContainsDay   <http://reference.data.gov.uk/id/day/2017-11-06> , <http://reference.data.gov.uk/id/day/2017-11-03> , <http://reference.data.gov.uk/id/day/2017-11-05> , <http://reference.data.gov.uk/id/day/2017-11-21> , <http://reference.data.gov.uk/id/day/2017-11-16> , <http://reference.data.gov.uk/id/day/2017-11-14> , <http://reference.data.gov.uk/id/day/2017-11-08> , <http://reference.data.gov.uk/id/day/2017-11-22> , <http://reference.data.gov.uk/id/day/2017-11-17> , <http://reference.data.gov.uk/id/day/2017-11-04> , <http://reference.data.gov.uk/id/day/2017-11-02> , <http://reference.data.gov.uk/id/day/2017-11-01> , <http://reference.data.gov.uk/id/day/2017-11-28> , <http://reference.data.gov.uk/id/day/2017-11-27> , <http://reference.data.gov.uk/id/day/2017-11-20> , <http://reference.data.gov.uk/id/day/2017-11-25> , <http://reference.data.gov.uk/id/day/2017-11-15> , <http://reference.data.gov.uk/id/day/2017-11-19> , <http://reference.data.gov.uk/id/day/2017-11-13> , <http://reference.data.gov.uk/id/day/2017-11-12> , <http://reference.data.gov.uk/id/day/2017-11-29> , <http://reference.data.gov.uk/id/day/2017-11-07> , <http://reference.data.gov.uk/id/day/2017-11-30> , <http://reference.data.gov.uk/id/day/2017-11-26> , <http://reference.data.gov.uk/id/day/2017-11-10> , <http://reference.data.gov.uk/id/day/2017-11-24> , <http://reference.data.gov.uk/id/day/2017-11-09> , <http://reference.data.gov.uk/id/day/2017-11-23> , <http://reference.data.gov.uk/id/day/2017-11-11> , <http://reference.data.gov.uk/id/day/2017-11-18> ;
+        interval:intervalContainsDays  ( <http://reference.data.gov.uk/id/day/2017-11-01> <http://reference.data.gov.uk/id/day/2017-11-02> <http://reference.data.gov.uk/id/day/2017-11-03> <http://reference.data.gov.uk/id/day/2017-11-04> <http://reference.data.gov.uk/id/day/2017-11-05> <http://reference.data.gov.uk/id/day/2017-11-06> <http://reference.data.gov.uk/id/day/2017-11-07> <http://reference.data.gov.uk/id/day/2017-11-08> <http://reference.data.gov.uk/id/day/2017-11-09> <http://reference.data.gov.uk/id/day/2017-11-10> <http://reference.data.gov.uk/id/day/2017-11-11> <http://reference.data.gov.uk/id/day/2017-11-12> <http://reference.data.gov.uk/id/day/2017-11-13> <http://reference.data.gov.uk/id/day/2017-11-14> <http://reference.data.gov.uk/id/day/2017-11-15> <http://reference.data.gov.uk/id/day/2017-11-16> <http://reference.data.gov.uk/id/day/2017-11-17> <http://reference.data.gov.uk/id/day/2017-11-18> <http://reference.data.gov.uk/id/day/2017-11-19> <http://reference.data.gov.uk/id/day/2017-11-20> <http://reference.data.gov.uk/id/day/2017-11-21> <http://reference.data.gov.uk/id/day/2017-11-22> <http://reference.data.gov.uk/id/day/2017-11-23> <http://reference.data.gov.uk/id/day/2017-11-24> <http://reference.data.gov.uk/id/day/2017-11-25> <http://reference.data.gov.uk/id/day/2017-11-26> <http://reference.data.gov.uk/id/day/2017-11-27> <http://reference.data.gov.uk/id/day/2017-11-28> <http://reference.data.gov.uk/id/day/2017-11-29> <http://reference.data.gov.uk/id/day/2017-11-30> ) ;
+        interval:monthOfYear           interval:November ;
+        interval:nextInterval          <http://reference.data.gov.uk/id/month/2017-12> ;
+        interval:ordinalHalfOfYear     2 ;
+        interval:ordinalMonthOfYear    11 ;
+        interval:ordinalQuarterOfYear  4 ;
+        interval:ordinalYear           2017 ;
+        interval:previousInterval      <http://reference.data.gov.uk/id/month/2017-10> ;
+        dgu:uriSet                     <http://reference.data.gov.uk/id/month> ;
+        skos:prefLabel                 "British Month:2017-11"@en ;
+        time:hasBeginning              <http://reference.data.gov.uk/id/gregorian-instant/2017-11-01T00:00:00> ;
+        time:hasDurationDescription    interval:one-month ;
+        time:hasEnd                    <http://reference.data.gov.uk/id/gregorian-instant/2017-12-01T00:00:00> ;
+        time:intervalContains          <http://reference.data.gov.uk/id/day/2017-11-22> , <http://reference.data.gov.uk/id/day/2017-11-12> , <http://reference.data.gov.uk/id/day/2017-11-08> , <http://reference.data.gov.uk/id/day/2017-11-18> , <http://reference.data.gov.uk/id/day/2017-11-01> , <http://reference.data.gov.uk/id/day/2017-11-02> , <http://reference.data.gov.uk/id/day/2017-11-25> , <http://reference.data.gov.uk/id/day/2017-11-20> , <http://reference.data.gov.uk/id/day/2017-11-10> , <http://reference.data.gov.uk/id/day/2017-11-04> , <http://reference.data.gov.uk/id/day/2017-11-27> , <http://reference.data.gov.uk/id/day/2017-11-28> , <http://reference.data.gov.uk/id/day/2017-11-29> , <http://reference.data.gov.uk/id/day/2017-11-11> , <http://reference.data.gov.uk/id/day/2017-11-17> , <http://reference.data.gov.uk/id/day/2017-11-07> , <http://reference.data.gov.uk/id/day/2017-11-14> , <http://reference.data.gov.uk/id/day/2017-11-09> , <http://reference.data.gov.uk/id/day/2017-11-30> , <http://reference.data.gov.uk/id/day/2017-11-26> , <http://reference.data.gov.uk/id/day/2017-11-16> , <http://reference.data.gov.uk/id/day/2017-11-23> , <http://reference.data.gov.uk/id/day/2017-11-24> , <http://reference.data.gov.uk/id/day/2017-11-05> , <http://reference.data.gov.uk/id/day/2017-11-06> , <http://reference.data.gov.uk/id/day/2017-11-19> , <http://reference.data.gov.uk/id/day/2017-11-13> , <http://reference.data.gov.uk/id/day/2017-11-03> , <http://reference.data.gov.uk/id/day/2017-11-21> , <http://reference.data.gov.uk/id/day/2017-11-15> ;
+        time:intervalDuring            <http://reference.data.gov.uk/id/half/2017-H2> , <http://reference.data.gov.uk/id/year/2017> , <http://reference.data.gov.uk/id/quarter/2017-Q4> ;
+        time:intervalEquals            <http://reference.data.gov.uk/id/gregorian-interval/2017-11-01T00:00:00/P1M> ;
+        time:intervalMeets             <http://reference.data.gov.uk/id/month/2017-12> ;
+        time:intervalMetBy             <http://reference.data.gov.uk/id/month/2017-10> ;
+        foaf:isPrimaryTopicOf          <http://reference.data.gov.uk/doc/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-10>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Friday the 10th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-10"@en ;
+        skos:prefLabel       "British Day:2017-11-10"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-23>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Thursday the 23rd of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-23"@en ;
+        skos:prefLabel       "British Day:2017-11-23"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/year/2017>
+        a                               interval:Year , interval:CalendarYear ;
+        rdfs:comment                    "The British calendar year of 2017"@en ;
+        rdfs:label                      "British Year:2017"@en ;
+        interval:intervalContainsMonth  <http://reference.data.gov.uk/id/month/2017-11> ;
+        skos:prefLabel                  "British Year:2017"@en ;
+        time:intervalContains           <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-08>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Wednesday the 8th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-08"@en ;
+        skos:prefLabel       "British Day:2017-11-08"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/quarter/2017-Q4>
+        a                               interval:Q4 , interval:Quarter , interval:CalendarQuarter ;
+        rdfs:comment                    "The forth quarter of the British calendar year 2017"@en ;
+        rdfs:label                      "British Quarter:2017-Q4"@en ;
+        interval:intervalContainsMonth  <http://reference.data.gov.uk/id/month/2017-11> ;
+        skos:prefLabel                  "British Quarter:2017-Q4"@en ;
+        time:intervalContains           <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-30>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Thursday the 30th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-30"@en ;
+        skos:prefLabel       "British Day:2017-11-30"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-02>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Thursday the 2nd of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-02"@en ;
+        skos:prefLabel       "British Day:2017-11-02"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-15>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Wednesday the 15th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-15"@en ;
+        skos:prefLabel       "British Day:2017-11-15"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/month>
+        a               dgu:URIset , void:Dataset ;
+        rdfs:label      "British calendar aligned one month intervals."@en ;
+        skos:prefLabel  "British calendar aligned one month intervals."@en .
+
+<http://reference.data.gov.uk/id/day/2017-11-28>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Tuesday the 28th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-28"@en ;
+        skos:prefLabel       "British Day:2017-11-28"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/month/2017-10>
+        a                   interval:Month , interval:CalendarMonth ;
+        rdfs:comment        "The month of October in the British calendar year 2017"@en ;
+        rdfs:label          "British Month:2017-10"@en ;
+        skos:prefLabel      "British Month:2017-10"@en ;
+        time:intervalMeets  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-22>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Wednesday the 22nd of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-22"@en ;
+        skos:prefLabel       "British Day:2017-11-22"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/doc/month/2017-11.rdf>
+        a               foaf:Document ;
+        rdfs:label      "RDF/XML document about: British Month:2017-11"@en ;
+        dcterms:format  [ rdfs:label  "application/rdf+xml" ] .
+
+<http://reference.data.gov.uk/id/day/2017-11-07>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Tuesday the 7th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-07"@en ;
+        skos:prefLabel       "British Day:2017-11-07"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-01>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Wednesday the 1st of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-01"@en ;
+        skos:prefLabel       "British Day:2017-11-01"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-14>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Tuesday the 14th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-14"@en ;
+        skos:prefLabel       "British Day:2017-11-14"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/half/2017-H2>
+        a                               interval:H2 , interval:Half , interval:CalendarHalf ;
+        rdfs:comment                    "The second half of British calendar year 2017"@en ;
+        rdfs:label                      "British Half:2017-H2"@en ;
+        interval:intervalContainsMonth  <http://reference.data.gov.uk/id/month/2017-11> ;
+        skos:prefLabel                  "British Half:2017-H2"@en ;
+        time:intervalContains           <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-27>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Monday the 27th of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-27"@en ;
+        skos:prefLabel       "British Day:2017-11-27"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/doc/month/2017-11.n3>
+        a               foaf:Document ;
+        rdfs:label      "N3 document about: British Month:2017-11"@en ;
+        dcterms:format  [ rdfs:label  "text/n3" ] .
+
+_:b1    a          frbr:CorporateBody , prv:DataPublisher ;
+        foaf:name  "data.gov.uk"@en .
+
+<http://reference.data.gov.uk/doc/month/2017-11>
+        a                        prv:DataItem , foaf:Document ;
+        rdfs:label               "Generic Dataset document about: British Month:2017-11"@en ;
+        dcterms:creator          _:b0 ;
+        dcterms:dateCopyrighted  "2011-09-09"^^xsd:date ;
+        dcterms:hasFormat        <http://reference.data.gov.uk/doc/month/2017-11.n3> , <http://reference.data.gov.uk/doc/month/2017-11.rdf> , <http://reference.data.gov.uk/doc/month/2017-11.ttl> , <http://reference.data.gov.uk/doc/month/2017-11.json> , <http://reference.data.gov.uk/doc/month/2017-11.nt> ;
+        dcterms:license          <http://reference.data.gov.uk/id/open-government-licence> ;
+        dcterms:publisher        _:b1 ;
+        dcterms:rightsHolder     _:b1 ;
+        prv:createdBy            [ a                prv:DataCreation ;
+                                   prv:performedAt  "2011-09-09"^^xsd:date ;
+                                   prv:performedBy  _:b0
+                                 ] ;
+        foaf:primaryTopic        <http://reference.data.gov.uk/id/month/2017-11> .
+
+<http://reference.data.gov.uk/id/day/2017-11-21>
+        a                    interval:Day , interval:CalendarDay ;
+        rdfs:comment         "Tuesday the 21st of November in the British calendar year 2017"@en ;
+        rdfs:label           "British Day:2017-11-21"@en ;
+        skos:prefLabel       "British Day:2017-11-21"@en ;
+        time:intervalDuring  <http://reference.data.gov.uk/id/month/2017-11> .
