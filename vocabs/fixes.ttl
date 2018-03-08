@@ -4,6 +4,7 @@
 @prefix grddl: <http://www.w3.org/2003/g/data-view#> .
 @prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pmdq: <http://publishmydata.com/def/qb/> .
 
 grddl:namespaceTransformation a owl:ObjectProperty ;
   rdfs:label "namespace transformation"@en .
@@ -16,3 +17,6 @@ prov:sharesDefinitionWith a owl:ObjectProperty ;
 
 prov:aq a owl:AnnotationProperty ;
   rdfs:label "see also"@en .
+
+pmdq:codesUsed a owl:ObjectProperty ;
+  rdfs:label "codes used"@en .

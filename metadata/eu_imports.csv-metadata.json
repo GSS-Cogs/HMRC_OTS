@@ -45,6 +45,15 @@
             "@id": "xsd:nonNegativeInteger"
           }
         }
+      }, {
+        "@id": "http://gss-data.org.uk/data/hmrcots#component-area",
+        "@type": "qb:ComponentSpecification",
+        "qb:dimension": {
+          "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+          "@type": [ "owl:ObjectProperty", "qb:DimensionProperty" ],
+          "rdfs:label": "area",
+          "rdfs:range": "http://statistics.data.gov.uk/def/statistical-geography#Statistical-Geography"
+        }
       }
     ]
   },
@@ -73,7 +82,12 @@
       "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
       "valueUrl": "http://reference.data.gov.uk/id/month/{ym}"
     }, {
-      "name": "dataset_ref2",
+      "name": "place",
+      "virtual": true,
+      "propertyUrl": "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+      "valueUrl": "http://statistics.data.gov.uk/id/statistical-geography/K02000001"
+    }, {
+      "name": "dataset_ref",
       "rdfs:comment": "virtual column linking observations to the dataset",
       "virtual": true,
       "propertyUrl": "qb:dataSet",
