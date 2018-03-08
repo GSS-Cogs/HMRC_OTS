@@ -1,6 +1,6 @@
 {
   "@context": ["http://www.w3.org/ns/csvw", {"@language": "en"}],
-  "@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711",
+  "@id": "http://gss-data.org.uk/data/hmrcots",
   "url": "eu_imports.csv",
   "dc:title": "EU Imports",
   "dc:description": "Imports Monthly Early Publication of Overseas Trade Statistics",
@@ -9,10 +9,12 @@
     "rdfs:label": "HM Revenue & Customs"
   },
   "qb:structure": {
-    "@id": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711#dsd",
+    "@id": "http://gss-data.org.uk/data/hmrcots#dsd",
     "@type": "qb:DataStructureDefinition",
     "qb:component": [
       {
+        "@id": "http://gss-data.org.uk/data/hmrcots#component-date",
+        "@type": "qb:ComponentSpecification",
         "qb:dimension": {
           "@id": "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
           "@type": ["qb:DimensionProperty", "owl:ObjectProperty"],
@@ -22,6 +24,8 @@
           }
         }
       }, {
+        "@id": "http://gss-data.org.uk/data/hmrcots#component-chapter",
+        "@type": "qb:ComponentSpecification",
         "qb:dimension": {
           "@id": "https://www.uktradeinfo.com/Statistics/def/ots#cn-chapter",
           "@type": ["qb:DimensionProperty", "owl:ObjectProperty"],
@@ -31,6 +35,8 @@
           }
         }
       }, {
+        "@id": "http://gss-data.org.uk/data/hmrcots#component-value",
+        "@type": "qb:ComponentSpecification",
         "qb:measure": {
           "@id": "https://www.uktradeinfo.com/Statistics/def/ots#value",
           "@type": [ "owl:DatatypeProperty", "qb:MeasureProperty" ],
@@ -71,8 +77,8 @@
       "rdfs:comment": "virtual column linking observations to the dataset",
       "virtual": true,
       "propertyUrl": "qb:dataSet",
-      "valueUrl": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711"
+      "valueUrl": "http://gss-data.org.uk/data/hmrcots"
     }],
-    "aboutUrl": "https://www.uktradeinfo.com/Statistics/OTS%20Releases/OTS_IMP_1711#obs-{cn}-{ym}"
+    "aboutUrl": "http://gss-data.org.uk/data/hmrcots#obs-{cn}-{ym}"
   }
 }
