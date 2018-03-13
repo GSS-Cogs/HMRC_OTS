@@ -36,6 +36,7 @@ pipeline {
       steps {
         sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -i -t tests/ports -r reports/TESTS-ports.xml out/airports.jsonld out/seaports.jsonld'
         sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -i -t tests/qb -r reports/TESTS-qb.xml out/eu_imports.ttl'
+        sh 'java -cp bin/sparql uk.org.floop.sparqlTestRunner.Run -i -t tests/vocabs -r reports/TESTS-vocabs.xml out/eu_imports.ttl vocabs/*'
       }
     }
   }
